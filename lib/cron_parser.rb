@@ -69,11 +69,3 @@ class CronParser
     result
   end
 end
-
-# cp = CronParser.new('15 0 1,15 * 1-5/2 /usr/bin/find').display
-# puts "minute         #{cp[:minute].join(' ')}" # minute
-# puts "hour           #{cp[:hour].join(' ')}" # hour
-# puts "day of month   #{cp[:dom].join(' ')}" # DOM
-# puts "month          #{cp[:month].join(' ')}" # mon
-# puts "day of week    #{cp[:dow].join(' ')}" # DOW
-# puts "command        #{cp[:command]}" # CMD
