@@ -62,10 +62,8 @@ class CronParser
 
   def interval_range(range, interval = 1)
     len = range.last - range.first
-    num = len.div(interval)
-    result = (0..num).map { |i| range.first + interval * i }
 
-    result.pop if (result[-1] == range.last) && range.exclude_end?
-    result
+    num = len.div(interval)
+    (0..num).map { |i| range.first + interval * i }
   end
 end
